@@ -12,12 +12,44 @@
 			href="./images/favicon-32x32.png"
 		/>
 		<link rel="stylesheet" href="style.css" />
+		<style>
+			.hero__svg {
+				width: 100%;
+				height: 600px;
+				border-radius: 0px 0px 0px 100px;
+				background: linear-gradient(135deg, #ff8f71 0%, #ff3e55 100%);
+			}
+			.hero {
+				padding-top: 0;
+			}
+		</style>
 	</head>
 	<body>
-		<section class="hero">
-			<div class="hero__background-color"></div>
-			<div class="hero__background-image"></div>
-			<div class="container">
+		<header class="hero">
+			<!-- <div class="hero__background-color"></div> -->
+			<!-- <div class="hero__background-image"></div> -->
+			<svg
+				viewBox="810 850 900 900"
+				class="hero__svg"
+				xmlns="http://www.w3.org/2000/svg"
+				width="3175"
+				height="3174"
+			>
+				>
+				<defs>
+					<linearGradient id="a" x1=".639%" x2="99.361%" y1="0%" y2="100%">
+						<stop offset="0%" stop-color="#FF8F71" />
+						<stop offset="100%" stop-color="#FF3E55" />
+					</linearGradient>
+				</defs>
+				<path
+					fill="url(#a)"
+					fill-rule="evenodd"
+					d="M1973.15 1193.185v788.41h-786.766v-688.41c0-55.228 44.772-100 100-100h686.767zm-1310.445-1.171c217.26 0 393.383 176.124 393.383 393.383v1.645c0 217.26-176.123 393.383-393.383 393.383S269.322 1804.3 269.322 1587.042v-1.645c0-217.26 176.124-393.383 393.383-393.383zm392.212-926.418v688.41c0 55.23-44.771 100-100 100H268.151v-788.41h786.766zm918.234 0v788.41h-686.767c-55.228 0-100-44.771-100-100v-688.41h786.767z"
+					transform="rotate(22 162.072 2556.164)"
+				/>
+			</svg>
+			<div class="hero__container">
 				<nav class="row">
 					<div class="logo">
 						<img src="./images/logo.svg" alt="" />
@@ -34,75 +66,78 @@
 					<a class="btn" href="#">Learn More</a>
 				</div>
 			</div>
-		</section>
+		</header>
 		<main>
-			<h2 class="main__title">Designed for the future</h2>
-			<img
-				class="image--editor"
-				src="/images/illustration-editor-mobile.svg"
-				alt=""
-			/>
-			<div class="container">
-				<div class="feature">
-					<h2 class="feature__title">Introducing an extensible editor</h2>
+			<section>
+				<h2 class="main__title">Designed for the future</h2>
+				<img
+					class="image--editor"
+					src="/images/illustration-editor-mobile.svg"
+					alt=""
+				/>
+				<div class="container">
+					<div class="feature">
+						<h2 class="feature__title">Introducing an extensible editor</h2>
+						<p>
+							Blogr features an exceedingly intuitive interface which lets you
+							focus on one thing: creating content. The editor supports
+							management of multiple blogs and allows easy manipulation of
+							embeds such as images, videos, and Markdown. Extensibility with
+							plugins and themes provide easy ways to add functionality or
+							change the looks of a blog.
+						</p>
+					</div>
+					<div class="feature">
+						<h2 class="feature__title">Robust content management</h2>
+						<p>
+							Flexible content management enables users to easily move through
+							posts. Increase the usability of your blog by adding customized
+							categories, sections, format, or flow. With this functionality,
+							you’re in full control.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="banner">
+				<div class="banner__background-color"></div>
+				<div class="banner__background-image"></div>
+				<div class="banner__content">
+					<img class="phone" src="./images/illustration-phones.svg" alt="" />
+					<h1>State of the Art Infrastructure</h1>
 					<p>
-						Blogr features an exceedingly intuitive interface which lets you
-						focus on one thing: creating content. The editor supports management
-						of multiple blogs and allows easy manipulation of embeds such as
-						images, videos, and Markdown. Extensibility with plugins and themes
-						provide easy ways to add functionality or change the looks of a
-						blog.
+						With reliability and speed in mind, worldwide data centers provide
+						the backbone for ultra-fast connectivity. This ensures your site
+						will load instantly, no matter where your readers are, keeping your
+						site competitive.
 					</p>
 				</div>
-				<div class="feature">
-					<h2 class="feature__title">Robust content management</h2>
-					<p>
-						Flexible content management enables users to easily move through
-						posts. Increase the usability of your blog by adding customized
-						categories, sections, format, or flow. With this functionality,
-						you’re in full control.
-					</p>
+			</section>
+			<section>
+				<img src="./images/illustration-laptop-mobile.svg" alt="" />
+				<div class="container">
+					<div class="feature">
+						<h2 class="feature__title">Free, open, simple</h2>
+						<p>
+							Blogr is a free and open source application backed by a large
+							community of helpful developers. It supports features such as code
+							syntax highlighting, RSS feeds, social media integration,
+							third-party commenting tools, and works seamlessly with Google
+							Analytics. The architecture is clean and is relatively easy to
+							learn.
+						</p>
+					</div>
+					<div class="feature">
+						<h2 class="feature__title">Powerful tooling</h2>
+						<p>
+							Batteries included. We built a simple and straightforward CLI tool
+							that makes customization and deployment a breeze, but capable of
+							producing even the most complicated sites.
+						</p>
+					</div>
 				</div>
-			</div>
+			</section>
 		</main>
-		<section class="banner">
-			<div class="banner__background-color"></div>
-			<div class="banner__background-image"></div>
-			<div class="banner__content">
-				<img class="phone" src="./images/illustration-phones.svg" alt="" />
-				<h1>State of the Art Infrastructure</h1>
-				<p>
-					With reliability and speed in mind, worldwide data centers provide the
-					backbone for ultra-fast connectivity. This ensures your site will load
-					instantly, no matter where your readers are, keeping your site
-					competitive.
-				</p>
-			</div>
-		</section>
-		<section>
-			<img src="./images/illustration-laptop-mobile.svg" alt="" />
-			<div class="container">
-				<div class="feature">
-					<h2 class="feature__title">Free, open, simple</h2>
-					<p>
-						Blogr is a free and open source application backed by a large
-						community of helpful developers. It supports features such as code
-						syntax highlighting, RSS feeds, social media integration,
-						third-party commenting tools, and works seamlessly with Google
-						Analytics. The architecture is clean and is relatively easy to
-						learn.
-					</p>
-				</div>
-				<div class="feature">
-					<h2 class="feature__title">Powerful tooling</h2>
-					<p>
-						Batteries included. We built a simple and straightforward CLI tool
-						that makes customization and deployment a breeze, but capable of
-						producing even the most complicated sites.
-					</p>
-				</div>
-			</div>
-		</section>
+
 		<footer>
 			<div class="logo">
 				<img src="./images/logo.svg" alt="" />
