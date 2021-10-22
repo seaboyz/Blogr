@@ -64,6 +64,10 @@ p {
 	line-height: 1.125rem;
 }
 
+.nav__menu a {
+	color: #1f3e5a;
+}
+
 .main__title,
 .feature__title {
 	font-size: 1.75rem;
@@ -86,6 +90,11 @@ footer li a {
 	line-height: 1.83;
 }
 /* reusable component */
+
+.hidden {
+	display: none;
+}
+
 .row {
 	display: flex;
 	align-items: center;
@@ -102,6 +111,7 @@ footer li a {
 	height: 3rem;
 	border: 1px solid #fff;
 	border-radius: 2rem;
+	display: block;
 }
 .logo {
 	width: 101px;
@@ -127,6 +137,83 @@ footer li a {
 	height: 32px;
 }
 
+.nav--btn {
+	width: 32px;
+	height: 32px;
+}
+
+.hamburger {
+	background: url('./images/icon-hamburger.svg');
+	background-repeat: no-repeat;
+}
+.close {
+	background: url('./images/icon-close.svg');
+	background-repeat: no-repeat;
+}
+
+.nav__menu {
+	background: white;
+	position: absolute;
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.243444);
+	padding-top: 1.5rem;
+	padding-bottom: 2rem;
+	top: 4.25rem;
+}
+
+.nav__sub-menu {
+	margin-bottom: 1.5rem;
+}
+
+.sub-menu-title {
+	font-weight: 500;
+	padding-right: 1rem;
+}
+
+.arrow {
+	width: 10px;
+	height: 8px;
+}
+
+.arrow--up {
+	transform: rotate(180deg);
+}
+
+.sub-menu-list {
+	background: rgba(44, 45, 63, 0.08);
+	border-radius: 5px;
+	margin: 1.5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.nav__menu li {
+	margin-bottom: 1rem;
+}
+.nav__menu li a {
+	color: rgba(31, 62, 90, 0.75);
+}
+
+.login-sign-up {
+	margin: 0 1.5rem;
+	border-top: 2px solid #e8e4e4;
+}
+
+.login,
+.sign-up {
+	margin: 0 auto;
+}
+.login {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+a.sign-up.btn {
+	color: #fff;
+	background: linear-gradient(135deg, #ff8f71 0%, #ff3e55 100%);
+}
+
 .hero__container {
 	position: absolute;
 	top: 56px;
@@ -149,12 +236,12 @@ footer li a {
 .row--btn {
 	justify-content: space-around;
 }
-.hero .btn {
-	color: #fff;
-}
 .btn.start-for-free {
 	background-color: #fff;
 	color: #ff3e55;
+}
+.btn.learn-more {
+	color: #fff;
 }
 /* main */
 .main__title {
