@@ -58,49 +58,46 @@
 								<img src="./images/logo.svg" alt="" />
 							</a>
 						</div>
+						<div class="nav__menu">
+							<div class="nav__sub-menu">
+								<a class="sub-menu-title" href="#"
+									>Product <span class="arrow"></span
+								></a>
+								<div class="sub-menu-list">
+									<a href="#">Overview</a>
+									<a href="#">Pricing</a>
+									<a href="#">Marketplace</a>
+									<a href="#">Features</a>
+									<a href="#">Integrations</a>
+								</div>
+							</div>
+							<div class="nav__sub-menu">
+								<a class="sub-menu-title" href="#"
+									>Company <span class="arrow"></span
+								></a>
+								<div class="sub-menu-list">
+									<a href="#">About</a>
+									<a href="#">Team</a>
+									<a href="#">Blog</a>
+									<a href="#">Creers</a>
+								</div>
+							</div>
+							<div class="nav__sub-menu">
+								<a class="sub-menu-title" href="#"
+									>Connect <span class="arrow"></span
+								></a>
+								<div class="sub-menu-list">
+									<a href="#">Contact</a>
+									<a href="#">Newsletter</a>
+									<a href="#">LinkedIn</a>
+								</div>
+							</div>
+							<div class="login-sign-up">
+								<a class="btn login" href="#">Login</a>
+								<a class="btn sign-up" href="#">Sign up</a>
+							</div>
+						</div>
 						<a class="nav--btn hamburger" href="#"></a>
-					</div>
-					<div class="nav__menu hidden">
-						<div class="nav__sub-menu">
-							<a class="sub-menu-title" href="#"
-								>Product
-								<img class="arrow" src="./images/icon-arrow-dark.svg" alt=""
-							/></a>
-							<ul class="sub-menu-list hidden">
-								<li><a href="#">Overview</a></li>
-								<li><a href="#">Pricing</a></li>
-								<li><a href="#">Marketplace</a></li>
-								<li><a href="#">Features</a></li>
-								<li><a href="#">Integrations</a></li>
-							</ul>
-						</div>
-						<div class="nav__sub-menu">
-							<a class="sub-menu-title" href="#"
-								>Company
-								<img class="arrow" src="./images/icon-arrow-dark.svg" alt=""
-							/></a>
-							<ul class="sub-menu-list hidden">
-								<li><a href="#">About</a></li>
-								<li><a href="#">Team</a></li>
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">Creers</a></li>
-							</ul>
-						</div>
-						<div class="nav__sub-menu">
-							<a class="sub-menu-title" href="#"
-								>Connect
-								<img class="arrow" src="./images/icon-arrow-dark.svg" alt=""
-							/></a>
-							<ul class="sub-menu-list hidden">
-								<li><a href="#">Contact</a></li>
-								<li><a href="#">Newsletter</a></li>
-								<li><a href="#">LinkedIn</a></li>
-							</ul>
-						</div>
-						<div class="login-sign-up">
-							<a class="btn login" href="#">Login</a>
-							<a class="btn sign-up" href="#">Sign up</a>
-						</div>
 					</div>
 				</nav>
 
@@ -112,15 +109,12 @@
 				</div>
 			</div>
 		</header>
+
 		<main>
-			<section>
+			<section class="section--editor">
 				<h2 class="main__title">Designed for the future</h2>
-				<img
-					class="image--editor"
-					src="/images/illustration-editor-mobile.svg"
-					alt=""
-				/>
-				<div class="container">
+				<div class="image--editor"></div>
+				<div class="wrapper">
 					<div class="feature">
 						<h2 class="feature__title">Introducing an extensible editor</h2>
 						<p>
@@ -144,10 +138,8 @@
 				</div>
 			</section>
 			<section class="banner">
-				<div class="banner__background-color"></div>
-				<div class="banner__background-image"></div>
+				<div class="banner__image"></div>
 				<div class="banner__content">
-					<img class="phone" src="./images/illustration-phones.svg" alt="" />
 					<h1>State of the Art Infrastructure</h1>
 					<p>
 						With reliability and speed in mind, worldwide data centers provide
@@ -157,9 +149,9 @@
 					</p>
 				</div>
 			</section>
-			<section>
-				<img src="./images/illustration-laptop-mobile.svg" alt="" />
-				<div class="container">
+			<section class="section--laptop">
+				<div class="image--laptop"></div>
+				<div class="wrapper">
 					<div class="feature">
 						<h2 class="feature__title">Free, open, simple</h2>
 						<p>
@@ -191,34 +183,34 @@
 				<h3>
 					<a href="#">Product</a>
 				</h3>
-				<ul>
-					<li><a href="#">Overview</a></li>
-					<li><a href="#">Pricing</a></li>
-					<li><a href="#">Marketplace</a></li>
-					<li><a href="#">Features</a></li>
-					<li><a href="#">Integrations</a></li>
-				</ul>
+				<div class="foot__list">
+					<a href="#">Overview</a>
+					<a href="#">Pricing</a>
+					<a href="#">Marketplace</a>
+					<a href="#">Features</a>
+					<a href="#">Integrations</a>
+				</div>
 			</div>
 			<div>
 				<h3>
 					<a href="#">Company</a>
 				</h3>
-				<ul>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Team</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Creers</a></li>
-				</ul>
+				<div class="foot__list">
+					<a href="#">About</a>
+					<a href="#">Team</a>
+					<a href="#">Blog</a>
+					<a href="#">Creers</a>
+				</div>
 			</div>
 			<div>
 				<h3>
 					<a href="#">Connect</a>
 				</h3>
-				<ul>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#">Newsletter</a></li>
-					<li><a href="#">LinkedIn</a></li>
-				</ul>
+				<div class="foot__list">
+					<a href="#">Contact</a>
+					<a href="#">Newsletter</a>
+					<a href="#">LinkedIn</a>
+				</div>
 			</div>
 		</footer>
 	</body>
