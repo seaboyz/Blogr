@@ -61,10 +61,6 @@ header {
 	height: 32px;
 }
 
-.nav__close {
-	display: none;
-}
-
 .hero__text {
 	text-align: center;
 	color: #fff;
@@ -173,4 +169,9 @@ header {
 	color: #fff;
 	background: linear-gradient(135deg, #ff8f71 0%, #ff3e55 100%);
 	border: none;
+}
+
+/* ********************************************************************* */
+.hide {
+	display: none !important;
 }
