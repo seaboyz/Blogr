@@ -12,6 +12,7 @@ html {
 
 body {
 	margin: 0;
+	min-width: 375px;
 }
 
 a {
@@ -27,14 +28,16 @@ button {
 	width: 137px;
 	height: 48px;
 	font-weight: 900;
+	cursor: pointer;
 }
-
+/*********** header ***********/
 header {
 	width: 100%;
 	min-width: 375px;
 	height: 600px;
 	border-radius: 0px 0px 0px 100px;
 	background-image: linear-gradient(135deg, #ff8f71 0%, #ff3e55 100%);
+	margin-bottom: 100px;
 }
 
 .header__background-pattern {
@@ -111,6 +114,10 @@ header {
 	box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.243444);
 }
 
+.header__nav__wapper {
+	cursor: pointer;
+}
+
 .sub-menu__title {
 	font-size: 18px;
 	color: #1f3e5a;
@@ -169,6 +176,146 @@ header {
 	color: #fff;
 	background: linear-gradient(135deg, #ff8f71 0%, #ff3e55 100%);
 	border: none;
+}
+
+/************* main ***********/
+/***** section top *****/
+main {
+	margin-bottom: 100px;
+}
+.main__title {
+	text-align: center;
+	margin-bottom: 38px;
+}
+
+.image--editor-mobile {
+	width: 100%;
+}
+
+.image--editor-desktop {
+	display: none;
+}
+
+.section--top__text {
+	margin-top: 46px;
+	padding: 0 24px;
+}
+
+.feature {
+	margin-bottom: 40px;
+}
+
+.feature__title {
+	font-size: 28px;
+	line-height: 32px;
+	color: #1f3e5a;
+	text-align: center;
+	letter-spacing: 1px;
+	margin-bottom: 16px;
+}
+
+.feature__text {
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 300;
+	text-align: center;
+	color: #4c5862;
+	letter-spacing: 0.5px;
+}
+/***** section middle *****/
+
+.section--middle {
+	background: url('./images/bg-pattern-circles.svg'),
+		linear-gradient(135deg, #2d2e40 0%, #3f4164 100%);
+	background-position: center top -200px, center center;
+	background-size: 160%, 100%;
+	background-repeat: no-repeat;
+	border-radius: 0px 100px;
+	padding: 221px 24px 109px;
+	position: relative;
+	margin-top: 273px;
+	margin-bottom: 79px;
+}
+.image--phone {
+	width: 100%;
+	position: absolute;
+	top: -172px;
+	left: 0;
+}
+
+.section--middle .feature__title {
+	color: #fff;
+	font-size: 40px;
+	line-height: 61px;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+.section--middle .feature__text {
+	color: #fff;
+}
+
+/***** section bottom *****/
+.section--bottom__image {
+	width: 100%;
+	height: 100vw;
+	background-image: url('./images/illustration-laptop-mobile.svg');
+
+	background-size: 140%;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.section--bottom__text {
+	padding: 0 24px;
+}
+
+/***** footer *****/
+footer {
+	background-color: #24242c;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.footer__nav {
+	padding: 75px 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 72px;
+}
+.footer__nav__menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+}
+
+.footer__logo {
+	width: 101px;
+}
+
+.footer__sub-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 21px;
+}
+.footer__sub-menu__title {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 33px;
+}
+.footer__sub-menu a {
+	color: #fff;
+}
+.footer__sub-menu__list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.footer__sub-menu__list a {
+	font-size: 18px;
+	line-height: 33px;
+	opacity: 0.75;
 }
 
 /* ********************************************************************* */
