@@ -103,8 +103,8 @@ header {
 .nav__menu {
 	width: 100%;
 	background-color: #fff;
-	display: flex;
 	flex-direction: column;
+	display: flex;
 	gap: 24px;
 	position: absolute;
 	top: 67px;
@@ -335,6 +335,83 @@ footer {
 	header {
 		margin: 0;
 	}
+	.header__nav {
+		gap: 64px;
+	}
+
+	.nav__menu {
+		all: unset;
+		display: flex;
+		align-items: center;
+		font-family: 'Ubuntu', sans-serif;
+		font-weight: 400;
+		flex: 1;
+	}
+	.nav__menu a {
+		color: #fff;
+	}
+
+	.nav__btn-group {
+		all: unset;
+		font-weight: 300;
+		margin-left: auto;
+	}
+
+	.btn--login {
+		color: #fff;
+		font-weight: 400;
+		opacity: 0.75;
+	}
+	.btn--login:hover {
+		opacity: 1;
+	}
+	.btn--sign-up {
+		color: #ff505c;
+		background: #fff;
+		font-weight: 400;
+	}
+	.btn--sign-up:hover {
+		color: #fff;
+		background: #ff7b86;
+	}
+
+	.sub-menu {
+		position: relative;
+	}
+
+	.sub-menu__title {
+		font-size: 16px;
+		line-height: 18px;
+		font-weight: 400;
+		opacity: 0.75;
+	}
+	.sub-menu__title:hover {
+		opacity: 1;
+		text-decoration: underline;
+	}
+	.sub-menu__title::after {
+		background-image: url('./images/icon-arrow-light.svg');
+	}
+	.sub-menu + .sub-menu {
+		margin-left: 16px;
+	}
+	.sub-menu__list {
+		position: absolute;
+		padding-left: 16px;
+		background-color: #fff;
+		box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.243444);
+		border-radius: 5px;
+		width: 168px;
+		left: -16px;
+	}
+	.sub-menu__list a {
+		color: #2d2e40;
+		font-weight: 400;
+	}
+	.sub-menu__list a:hover {
+		font-weight: 500;
+	}
+
 	.section--top {
 		background-image: url(./images/illustration-editor-desktop.svg);
 		background-size: 600px;
@@ -399,6 +476,24 @@ footer {
 		text-align: left;
 		width: 50%;
 		max-width: 540px;
+	}
+
+	.footer__nav {
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: initial;
+		padding: 50px calc(45vw - 375px);
+	}
+
+	.footer__logo {
+		flex-basis: 25%;
+	}
+	.footer__nav__menu {
+		flex-basis: 75%;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-between;
 	}
 }
 
