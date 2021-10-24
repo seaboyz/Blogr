@@ -186,6 +186,9 @@ main {
 .main__title {
 	text-align: center;
 	margin-bottom: 38px;
+	font-size: 28px;
+	line-height: 43px;
+	color: #1f3e5a;
 }
 
 .image--editor-mobile {
@@ -239,8 +242,7 @@ main {
 }
 
 .image--phone {
-	width: 100%;
-	max-width: 375px;
+	width: 375px;
 	top: -180px;
 	left: 0;
 	position: absolute;
@@ -421,8 +423,7 @@ footer {
 	}
 	.section--top__text {
 		text-align: left;
-		width: 50%;
-		max-width: 540px;
+		width: min(50%, 540px);
 	}
 
 	.image--editor-mobile {
@@ -445,15 +446,12 @@ footer {
 		margin-bottom: 90px;
 	}
 	.image--phone {
-		width: 50%;
-		max-width: 550px;
+		width: min(50%, 550px);
 		top: -50px;
-		/* left: 8vw; */
 	}
 	.section--middle__text {
 		text-align: left;
-		width: 50%;
-		max-width: 540px;
+		width: min(50%, 540px);
 		padding: 0;
 	}
 	.section--middle__text .feature__title {
@@ -474,8 +472,7 @@ footer {
 	}
 	.section--bottom__text {
 		text-align: left;
-		width: 50%;
-		max-width: 540px;
+		width: min(50%, 540px);
 	}
 
 	.footer__nav {
@@ -503,7 +500,6 @@ footer {
 	}
 	.image--phone {
 		left: calc(50vw - 600px);
-		/* max-width: 600px; */
 	}
 	.section--top {
 		background-size: 800px;
