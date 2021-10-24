@@ -496,7 +496,7 @@ footer {
 		justify-content: space-between;
 	}
 }
-
+/* **************************************** */
 @media (min-width: 1024px) {
 	.section--middle {
 		padding: 109px calc(50vw - 555px);
@@ -517,6 +517,9 @@ footer {
 	}
 }
 @media (min-width: 1440px) {
+	.header__container {
+		padding: 3.5rem 167px;
+	}
 	.section--top {
 		background-position: center right calc(50vw - 720px - 250px);
 	}
