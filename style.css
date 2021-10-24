@@ -232,7 +232,7 @@ main {
 	background-image: url('./images/bg-pattern-circles.svg'),
 		linear-gradient(135deg, #2d2e40 0%, #3f4164 100%);
 	background-position: right calc(100vw - 625px) top -250px, center center;
-	background-size: 625px, 100%;
+	background-size: clamp(625px, 166vw, 1000px), 100%;
 	background-repeat: no-repeat;
 	border-radius: 0px 100px;
 	padding-top: 221px;
@@ -416,7 +416,8 @@ footer {
 
 	.section--top {
 		background-image: url(./images/illustration-editor-desktop.svg);
-		background-size: 600px;
+		/* min 600px ideal 78% max 800px */
+		background-size: clamp(600px, 78%, 800px);
 		background-position: center right -200px;
 		background-repeat: no-repeat;
 		padding: 50px calc(45vw - 375px);
@@ -431,7 +432,6 @@ footer {
 	}
 
 	.section--middle {
-		background-size: 1000px, 100%;
 		background-position: right 600px top -450px, center center;
 		padding-top: 111px;
 		display: flex;
@@ -502,7 +502,6 @@ footer {
 		left: calc(50vw - 600px);
 	}
 	.section--top {
-		background-size: 800px;
 		background-position: center right -250px;
 		padding: 110px calc(50vw - 540px);
 	}
