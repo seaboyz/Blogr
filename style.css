@@ -338,10 +338,10 @@ footer {
 		margin: 0;
 	}
 	.header__nav {
-		gap: clamp(16px, 5vw, 64px);
+		gap: min(50vw - 348px, 64px);
 	}
 	.header__container {
-		padding: 3.5rem min(5vw, 156px) 0;
+		padding: 56px min(25vw - 174px, 160px) 0;
 	}
 
 	.nav__menu {
@@ -499,7 +499,7 @@ footer {
 /* **************************************** */
 @media (min-width: 1024px) {
 	.header__container {
-		padding: 3.5rem max(51.2px, 10vw) 0;
+		/* padding: 3.5rem max(51.2px, 10vw) 0; */
 	}
 	.section--middle {
 		padding: 109px calc(50vw - 555px);
